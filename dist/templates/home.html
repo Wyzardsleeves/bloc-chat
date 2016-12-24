@@ -1,3 +1,11 @@
-<h1>Home Page</h1>
-
-<div class="rooms" ng-repeat="Rooms in room"></div>
+<section>
+    <h1>Bloc Chat</h1>
+    <div class="chatRoomList" ng-repeat="roomList in home">
+        <ul ng-repeat="roomList in home">
+            <li data-ng-repeat="room in roomList.all">
+                {{room.name}}
+            </li>
+        </ul>
+    </div>
+    <h2>Rooms above</h2>
+</section>
