@@ -1,0 +1,14 @@
+<section class="pop-up-total">
+    <div class="pop-up-header">
+        <h3>Create New Room</h3>
+    </div>
+    <div class="pop-up-content">
+        <h5>Enter your room name</h5>
+        <input class="field-name" type="type" placeholder="Name Here" ng-model="addRoom.name">
+        {{addRoom.name}}
+    </div>
+    <div class="pop-up-bottom">
+        <button class="button-option-submit" type="button" ng-click="submitModal(addRoom.name)">Submit</button>
+        <button class="button-option-cancel" type="button" ng-click="closeModal()">Cancel</button>
+    </div>
+</section>

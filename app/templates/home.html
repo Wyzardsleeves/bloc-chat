@@ -1,10 +1,11 @@
-<section>
-    <h1>Bloc Chat</h1>
+<section class="bloc-chat-panel">
+    <div class=bloc-chat-stuff>
+        <h1 class=bloc-logo>Bloc Chat</h1>
+        <button class="create-room-button" type="button" ng-click="home.openModal()">Create Room</button>
+    </div>
     <div class="chatRoomList" ng-repeat="roomList in home">
-        <ul ng-repeat="roomList in home">
-            <li data-ng-repeat="room in roomList.all">
-                {{room.name}}
-            </li>
+        <ul data-ng-repeat="room in roomList.all">
+            <li>{{room.name}}</li>
         </ul>
     </div>
     <h2>Rooms above</h2>

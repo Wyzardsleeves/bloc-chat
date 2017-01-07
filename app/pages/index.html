@@ -3,13 +3,23 @@
     <head lang="en">
         <meta charset="UTF-8">
         <title>Bloc Base Project</title>
+        
+        <!-- Boostrap stuff -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        
+        
+        <!-- My Stuff -->
         <link rel="stylesheet" href="/styles/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Baloo+Thambi" rel="stylesheet">
     </head>
     <body>
         <ui-view></ui-view>
+        
+        <!-- Firebase stuff -->
         <script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
+        
+        <!-- Initialize Firebase -->
         <script>
-          // Initialize Firebase
           var config = {
             apiKey: "AIzaSyAjSCr3LQRtYw4nYUYqIA4fTxoU8w9Z_z4",
             authDomain: "bloc-chat-a3a89.firebaseapp.com",
@@ -25,9 +35,16 @@
         
         <!-- AngularFire -->
         <script src="https://cdn.firebase.com/libs/angularfire/2.0.1/angularfire.min.js"></script>
+        
+        <!-- ui.bootstrap checkpoint-3 -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.3.2/ui-bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.3.2/ui-bootstrap-tpls.min.js"></script>
+        
         <script src="/scripts/app.js"></script>
+        <script src="/scripts/controllers/ModalCtrl.js"></script>
         <script src="/scripts/controllers/RoomCtrl.js"></script>
         <script src="/scripts/services/Room.js"></script>
+        <script src="/scripts/services/Modal.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.js"></script>
     </body>
 </html>

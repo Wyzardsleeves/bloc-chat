@@ -8,18 +8,18 @@
             
         $stateProvider
             .state('home', {
-                url: '/', 
+                url: '/',
                 controller: 'RoomCtrl as home',
                 templateUrl: '/templates/home.html'
             });
     }
     
     angular
-        .module('bloc-chat', ['firebase', 'ui.router'])
+        .module('bloc-chat', ['firebase', 'ui.router', 'ui.bootstrap'])
         .config(config);
 })();
 
-/*
+/* Original version
 (function(){
     function config($stateProvider, $locationProvider){
         $locationProvider
@@ -31,7 +31,7 @@
         $stateProvider
             .state('home', {
                 url: '/',
-                controller: 'HomeCtrl as home',
+                controller: 'RoomCtrl as home',
                 templateUrl: '/templates/home.html'
             });
     }

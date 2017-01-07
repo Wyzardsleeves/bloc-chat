@@ -1,0 +1,62 @@
+body {
+    font-family: 'Baloo Thambi', cursive;
+}
+
+.bloc-logo {
+    display: inline-block;
+    padding: 0 20px 0 0;
+}
+
+.bloc-chat-panel{
+    padding: 0 0 0 30px;
+}
+
+.chatRoomList li {
+    list-style-type: none;
+    font-size: 20px;
+    color: purple;
+}
+
+.create-room-button {
+    margin: 10px 0 0 0;
+    color: dimgray;
+    font-family: 'Baloo Thambi', cursive;
+    border-radius: 8px;
+}
+
+.pop-up-total {
+    color: black;
+    padding: 10px 0 40px 50px;
+}
+
+.pop-up-bottom {
+    padding: 10px 0 0 0;
+    color: dimgray;
+}
+
+.pop-up-total {
+    border-bottom: 0 0 10px 0;
+    border-bottom-color: darkcyan;
+}
+
+.field-name {
+    
+}
+
+.button-option-submit {
+    border-radius: 8px;
+    display: inline-block;
+    font-family: 'Baloo Thambi', cursive;
+    color: dimgray;
+    margin: 0 8px 0 0;
+    padding: 0 18px 0 18px;
+}
+
+.button-option-cancel {
+    background-color: lightcoral;
+    border-radius: 8px;
+    display: inline-block;
+    font-family: 'Baloo Thambi', cursive;
+    color: dimgray;
+    padding: 0 18px 0 18px;
+}
