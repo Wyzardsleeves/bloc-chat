@@ -1,13 +1,11 @@
-{ "rooms": [{"id": 1, "name": "Room 1"}] }
+{ "messages": [{
+    username: "<USERNAME HERE>",
+    content: "<CONTENT OF THE MESSAGE HERE>",
+    sentAt: "<TIME MESSAGE WAS SENT HERE>",
+    roomId: "<ROOM UID HERE>"
+}] }
 
 
 /* Old version
-{
-"rooms": [
-{ 
-"id": 1,
-"name": "Room 1"
-}
-]
-}
+{ "rooms": [{"id": 1, "name": "Room 1"}] }
 */

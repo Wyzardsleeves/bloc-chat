@@ -1,3 +1,8 @@
+html {
+    height: 100%;
+    font-size: 100%;
+}
+
 body {
     font-family: 'Baloo Thambi', cursive;
 }
@@ -17,8 +22,39 @@ body {
     color: purple;
 }
 
+.chat-room-body{
+    
+}
+
+.list-elements:hover{
+    cursor: pointer;
+}
+
+.message-field{
+    background-color: lightgrey;
+    margin: -8px 0 -8px 0;
+    height: 38px;
+    line-height: 0px;
+}
+
+.message-field h5{
+    padding-top: 2px;
+}
+
+.left-panel{
+    height: 973px;
+    position: relative;
+    top: -20px;
+    left: -30px;
+    display: inline-block;
+    float: left;
+    padding: 0 20px 0 20px;
+    margin: 0 0 0 0;
+    border-right: 0 20px 0 0 blue;
+    background-color: darkgray;
+}
+
 .create-room-button {
-    margin: 10px 0 0 0;
     color: dimgray;
     font-family: 'Baloo Thambi', cursive;
     border-radius: 8px;
@@ -37,10 +73,6 @@ body {
 .pop-up-total {
     border-bottom: 0 0 10px 0;
     border-bottom-color: darkcyan;
-}
-
-.field-name {
-    
 }
 
 .button-option-submit {

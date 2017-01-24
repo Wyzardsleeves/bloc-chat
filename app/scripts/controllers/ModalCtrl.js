@@ -1,3 +1,5 @@
+/*
+
 (function(){
     function ModalCtrl($uibModalInstance, Room, $scope){
         this.addRoom = {};
@@ -15,7 +17,7 @@
         .module('bloc-chat')
         .controller('ModalCtrl', ModalCtrl);
 })();
-
+*/
 
 /*
 
