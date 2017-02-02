@@ -92,3 +92,11 @@ body {
     color: dimgray;
     padding: 0 18px 0 18px;
 }
+
+.button-option-submit-username{
+    border-radius: 8px;
+    display: inline-block;
+    font-family: 'Baloo Thambi', cursive;
+    color: dimgray;
+    padding: 0 43px 0 43px;
+}

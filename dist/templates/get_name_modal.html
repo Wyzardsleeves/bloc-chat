@@ -1,0 +1,14 @@
+<section class="pop-up-total">
+    <div class="pop-up-header">
+        <h3>Set a username</h3>
+    </div>
+    <div class="pop-up-content">
+        <h5>This name appears when you send messages</h5>
+        <input class="field-name" type="type" placeholder="Username Here" ng-model="newUser">
+    </div>
+    <div class="pop-up-bottom" ng-show="newUser"> <!-- ask why this works -->
+        <button class="button-option-submit-username" type="button" ng-click="setUser()">Set username</button>
+    </div>
+</section>
+
+<!-- setUser() .....create() -->

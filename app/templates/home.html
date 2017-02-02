@@ -11,40 +11,10 @@
         </div>
     </aside>
     <div class="chat-room-body">
-        <!--
-        <h3 class="current-room" ng-show="room.name in home">{{room.name}} Room will show here</h3>
-        -->
-        <h3 class="current-room">{{room.selectedRoom.name}} Room will show here</h3>
+        <h3 class="current-room">{{selectedRoom.name}}</h3>
         <div class="message-field" data-ng-repeat="message in home.messageList">
             <h5>{{message.username}}</h5>
             <p>{{message.content}}</p>
         </div>
     </div>
 </section>
-
-
-<!-- Version that works
-
-<section class="bloc-chat-panel">
-    <aside class="left-panel">
-        <div class=bloc-chat-stuff>
-            <h1 class=bloc-logo>Bloc Chat</h1>
-            <button class="create-room-button" type="button" ng-click="home.openModal()">Create Room</button>
-        </div>
-        <div class="chatRoomList" ng-repeat="roomList in home">
-            <ul data-ng-repeat="room in roomList.all">
-                <li>{{room.name}}</li>
-            </ul>
-        </div>
-        <h2>Rooms above</h2>
-    </aside>
-    <div class="chat-room-body">
-        <h3 class="current-room">{{selectedRoom}} Room will show here</h3>
-        <ul class="message-field" data-ng-repeat="messageList in home">
-            <h5>{{message.user}} Username here</h5>
-            <p>{{message.entry}} Message Entry here</p>
-        </ul>
-    </div>
-</section>
-
--->

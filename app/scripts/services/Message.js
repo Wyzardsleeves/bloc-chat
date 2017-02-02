@@ -9,7 +9,7 @@
                 return refMessages.orderByChild('roomId').equalTo(roomId);
             }
         };
-}
+    }
 
     angular
         .module('bloc-chat')
