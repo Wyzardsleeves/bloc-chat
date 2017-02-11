@@ -14,7 +14,7 @@
                         $uibModalInstance.close(trap);
                         console.log(trap);
                     };
-                    /*
+                    /* this doesn't work had to use method above
                     $scope.setUser = function(data){
                         $uibModalInstance.close(data);
                     }; */

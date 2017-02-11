@@ -5,6 +5,7 @@ html {
 
 body {
     font-family: 'Baloo Thambi', cursive;
+    height: 100%
 }
 
 .bloc-logo {
@@ -14,6 +15,7 @@ body {
 
 .bloc-chat-panel{
     padding: 0 0 0 30px;
+    height: 100%;
 }
 
 .chatRoomList li {
@@ -52,6 +54,7 @@ body {
     margin: 0 0 0 0;
     border-right: 0 20px 0 0 blue;
     background-color: darkgray;
+    height: 100%;
 }
 
 .create-room-button {
@@ -99,4 +102,28 @@ body {
     font-family: 'Baloo Thambi', cursive;
     color: dimgray;
     padding: 0 43px 0 43px;
+}
+
+.message-bar{
+    position: absolute;
+    bottom: 0;
+    left: 315px;
+}
+
+.message-chunk{
+    margin: 10px 0 -8px 0;
+    height: 38px;
+    line-height: 0px;
+    padding: 10px 0 0 30px;
+    background-color: yellowgreen;
+}
+
+.msg-txt-field{
+    width: 510px;
+    display: inline;
+}
+
+.msg-txt-button{
+    border-radius: 3px;
+    color: dimgray;
 }

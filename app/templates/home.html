@@ -16,5 +16,13 @@
             <h5>{{message.username}}</h5>
             <p>{{message.content}}</p>
         </div>
+        <div class='message-chunk' ng-show="home.newMessage">
+                <p>{{home.currentUser}}</p>
+                <h5>{{home.newMessage}}</h5>
+            </div>
+        <div class="message-bar">
+            <input class="msg-txt-field" ng-model="home.newMessage" placeholder="Write messages here......">
+            <button class="msg-txt-button" type="button" ng-click="home.sendMsg(home.newMessage)">SEND</button>
+        </div>
     </div>
 </section>

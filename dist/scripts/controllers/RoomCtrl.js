@@ -1,5 +1,5 @@
 (function(){
-    function RoomCtrl($scope, $uibModal, Room, Message){
+    function RoomCtrl($scope, $uibModal, Room, Message, $cookies){
         this.roomList = Room;
         this.messages = Message;
         this.messageList = [];
@@ -25,20 +25,26 @@
             });
         };
         
+        //Current Room
+        
+        this.currentUser = $cookies.get('blocChatCurrentUser');
         this.setCurrentRoom = function(room){
             var that = this;
-            //added why can't I add this above?
             $scope.selectedRoom = room;
             Message.getByRoomId(room.$id)
                 .on('value', function(snapshot){
-                    //that.messageList = [].concat(snapshot.val());
                     var value = snapshot.val();
-                    //if(!Array.isArray(value))
                     if(!Array.isArray(value) && Array.isArray(value)){
                         value = [value];
                     }
                     that.messageList = value;
-                });
+                 });
+        }
+        
+        this.newMessage = '';
+        this.sendMsg = function(msg){
+            Message.send(msg, $scope.selectedRoom.$id);
+            this.newMessage = '';
         }
     };
     
