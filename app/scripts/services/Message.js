@@ -14,7 +14,7 @@
                 var addMessage = {
                     username: $cookies.get('blocChatCurrentUser'),
                     content: message,
-                    roomId: roomId,//'-KbyPgmBGkhYmfC9F96V',
+                    roomId: roomId,
                     sentAt: "0:00"
                 }
                 messages.$add(addMessage);
