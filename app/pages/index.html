@@ -2,22 +2,22 @@
 <html ng-app="bloc-chat">
     <head lang="en">
         <meta charset="UTF-8">
-        <title>Bloc Base Project</title>
-        
+        <title>MockChat Base Project</title>
+
         <!-- Boostrap stuff -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        
-        
+
+
         <!-- My Stuff -->
         <link rel="stylesheet" href="/styles/style.css">
         <link href="https://fonts.googleapis.com/css?family=Baloo+Thambi" rel="stylesheet">
     </head>
     <body>
         <ui-view></ui-view>
-        
+
         <!-- Firebase stuff -->
         <script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
-        
+
         <!-- Initialize Firebase -->
         <script>
           var config = {
@@ -29,20 +29,20 @@
           };
           firebase.initializeApp(config);
         </script>
-        
+
         <!-- Angular -->
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
-        
+
         <!-- AngularFire -->
         <script src="https://cdn.firebase.com/libs/angularfire/2.0.1/angularfire.min.js"></script>
-        
+
         <!-- ui.bootstrap checkpoint-3 -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.3.2/ui-bootstrap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.3.2/ui-bootstrap-tpls.min.js"></script>
-        
+
         <!-- Cookies -->
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-cookies.js"></script>
-        
+
         <!-- Usual Scripts -->
         <script src="/scripts/app.js"></script>
         <script src="/scripts/controllers/ModalCtrl.js"></script>
